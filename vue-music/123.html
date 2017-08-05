@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .item {
+        overflow: hidden;
+        zoom: 1;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .item .item-title {
+        float: left;
+        width: 85px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: right;
+    }
+    .item .item-con {
+        overflow: hidden;
+        zoom: 1;
+    }
+    em,i {
+        font-style: normal;
+    }
+    p {
+        margin: 0.3em 0;
+    }
+    .star {
+        color: #F00;
+        margin-right: 5px;
+    }
+    .tips-text {
+        color: #ccc;
+    }
+    .input {
+        border: 1px solid #ccc;
+        padding: 2px 5px;
+        margin: 0;
+    }
+    </style>
+</head>
+<body>
+<ul>
+    <li class="item">
+        <div class="item-title">
+            <em class="star">*</em><label for="">邮件地址</label><i>：</i>
+        </div>
+        <div class="item-con">
+            <input class="input" placeholder="建议用手机号码注册" type="text" />
+            <p class="tips-text">6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
+        </div>
+    </li>
+    <li class="item">
+        <div class="item-title">
+            <em class="star">*</em><label for="">密码</label><i>：</i>
+        </div>
+        <div class="item-con">
+            <input class="input" type="text" />
+            <p class="tips-text">6~16个字符，区分大小写</p>
+        </div>
+    </li>
+    <li class="item">
+        <div class="item-title">
+            <em class="star">*</em><label for="">确认密码</label><i>：</i>
+        </div>
+        <div class="item-con">
+            <input class="input" type="text" />
+            <p class="tips-text">请再次填写密码</p>
+        </div>
+    </li>
+</ul>
+</body>
+</html>
